@@ -1,7 +1,10 @@
 /* CIT 230 - Assignment Portal CSS Template */
 /* You may use #HEX or color names */
 /* * is a wildcard referring to all elements. */
-*  { margin: 0; box-sizing: border-box; }
+*  { 
+    margin: 0; 
+    box-sizing: border-box;
+}
 body {
     font-size: 16px;
     line-height: 32px;
@@ -10,7 +13,7 @@ body {
 }
 h1 {
     font-size: 2.0rem;
-    color: #whitesmoke;
+    color: whitesmoke;
 }
 h2 {
     font-size: 1.5rem;
