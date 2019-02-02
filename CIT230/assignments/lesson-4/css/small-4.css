@@ -7,6 +7,7 @@ body {
     background-color: #fff;
     margin: 0;
     padding: 0;
+    font-family: 'Crimson Text', serif
 }
 
 header {
@@ -36,13 +37,10 @@ nav {
     overflow: hidden;
 }
 nav ul {
+    vertical-align: center;
     list-style-type: none;
     padding: 0;
 }
-/*nav li {
-    display: block;
-    /*padding: 5px;
-}*/
 nav a {
     display: block;
     padding: 5px;
@@ -58,6 +56,14 @@ a:hover {
     background-color: #e86e3bff;
     color: fff8eeff;
 }
-h1 {
-    margin: 5px;
+main {
+    background-color: #fff8eeff;
+    color: #4a3e62
+}
+footer {
+    background-color: #788aa3;
+    color: #fff8eeff;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    padding: 5px;
 }
