@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Josefin+Sans');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+	margin: 0 auto;
+    background-color: #4a3e62;
+    color: #fff8eeff;
+	border: 1px solid #4a3e62c5;
+    box-shadow: 0 0 30px #777;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif
+}
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
+.motto {
+    padding: 5px;
+}
+nav {
+    max-width: 960px;
+    margin: 0;
+    background-color:#788aa3;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+/*nav li {
+    display: block;
+    /*padding: 5px;
+}*/
+nav a {
+    display: block;
+    padding: 5px;
+}
+nav a:link { 
+    color:#fff8eeff;
+    text-decoration: none;
+}
+nav a:visited {
+    color: #4a3e62;
+}
+a:hover {
+    background-color: #e86e3bff;
+    color: fff8eeff;
+}
+h1 {
+    margin: 5px;
+}
