@@ -1,0 +1,53 @@
+@media screen and (min-width: 482px){
+body {
+  max-width: 960px;
+}
+nav {
+  padding: 10px;
+}
+nav li, a {
+  display: inline-block;
+}
+#menu {
+  display: none;
+}
+nav ul {
+  display: inline-block;
+  vertical-align: center;
+  padding: 0;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .25s;
+}
+nav a.current {
+  background-color: #fff8eeff;
+  color: #121225;
+}
+main, footer {
+  max-width: 80%;
+  margin: auto;
+}
+#forecast {
+  display: inline-block;
+  margin: auto;
+}
+section .image {
+  width: 100%;
+  object-fit: contain;
+}
+article .image {
+  float: right;
+}
+.table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 15px, auto, 20px;
+  grid-gap: 10px;
+
+}
+div .day, .icon, .temp {
+  justify-self: center;
+}
+}
