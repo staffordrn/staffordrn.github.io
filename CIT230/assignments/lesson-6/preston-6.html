@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+  <head>
+    <title>Envision Weather</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="envision weather, community weather and events for southwest idaho">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-6.css">
+    <link rel="stylesheet" href="css/large-6.css">
+  </head>
+
+  <body>
+    <header>
+      <img src="images/sunset-logo.png" alt="sunset logo">
+      <section class="headings">
+        <h1>Envision Weather</h1>
+        <div class="motto">Envision your perfect day</div>
+      </section>
+      <nav>
+        <button onclick="togglemenu()" id="menu">&#9776;</button>
+        <ul id="primarynav" class="hide">
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="current">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="top">
+        <h2 id="preston">Preston Idaho</h2>
+        <section id="local">
+          <h2 class="one">Local Weather</h2>
+          <ul >
+          <li class="two">Currently:</li>
+          <li class="two">High:</li>
+          <li class="two">Wind Chill:</li>
+          <li class="two">Humidity:</li>
+          <li class="two">Wind Speed:</li>
+          </ul>
+          <ul>
+          <li class="three">Sunny</li>
+          <li class="three">76&deg;F</li>
+          <li class="three">78&deg;F</li>
+          <li class="three">65&#37;</li>
+          <li class="three">5mph</li>
+          </ul>
+        </section>
+        <figure class="hero">
+          <img src="images/cit-230-image-960.jpg" class="image" alt="image of town in the mountains at sunrise" sizes="50vw"
+            srcset="images/hero320.jpg 160w,
+                    images/hero520.jpg 260w,
+                    images/hero960.jpg 480w">
+        </figure>
+          <section id="forecast">
+          <h2>5 Day Forecast</h2>
+          <div class="table">
+          <div class="day">Wednesday</div>
+          <div class="day">Thursday</div>
+          <div class="day">Friday</div>
+          <div class="day">Saturday</div>
+          <div class="day">Sunday</div>
+          <div class="icon"><img src="images/sunny1.png" alt="sun icon"></div>
+          <div class="icon"><img src="images/sunny1.png" alt="sun icon"></div>
+          <div class="icon"><img src="images/sunny1.png" alt="sun icon"></div>
+          <div class="icon"><img src="images/sunny1.png" alt="sun icon"></div>
+          <div class="icon"><img src="images/sunny1.png" alt="sun icon"></div>
+          <div class="temp">89&deg;F</div>
+          <div class="temp">87&deg;F</div>
+          <div class="temp">78&deg;F</div>
+          <div class="temp">75&deg;F</div>
+          <div class="temp">72&deg;F</div>
+          </div>
+        </section>
+      </section>
+      <article>
+        <img src="images/picnic.jpg" class="image" alt="a couple laughing while on a picnic">
+        <h3>Picnic in the Park</h3>
+        <h4>By Bob Bobson</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat ac felis donec et odio pellentesque diam. Morbi tristique senectus et netus et malesuada. Ornare massa eget egestas purus viverra accumsan. Sit amet nulla facilisi morbi tempus iaculis urna id. Pretium quam vulputate dignissim suspendisse in est ante in. Cursus euismod quis viverra nibh cras pulvinar. Egestas sed tempus urna et. Risus pretium quam vulputate dignissim suspendisse in est ante in. Ultrices eros in cursus turpis. Sapien pellentesque habitant morbi tristique senectus. Consequat id porta nibh venenatis cras. Gravida quis blandit turpis cursus. In hendrerit gravida rutrum quisque non....  <a href="#">click to continue reading</a></p>
+      </article>
+      <section class="info">
+        <h4>Envision Weather</h4>
+        <ul>
+        <li><img src="images/location.png" alt="map icon">Address: 30N 1st E Preston, Id 83263</li>
+        <li><img src="images/phone.png" alt="phone icon">Phone: 999-999-9999</li>
+        <li><img src="images/mail.png" alt="mail icon">E-mail: weather@envisionweather.com</li>
+        </ul>
+        <ul>
+        <li><a class="socialmedia" target="_blank" href="https://www.facebook.com/"><img class="icon" src="images/facebook.png" alt="facebook icon" ></a></li>
+        <li><a class="socialmedia" target="_blank" href="https://www.instagram.com/"><img class="icon" src="images/instagram.png" alt="instagram icon" ></a></li>
+        <li><a class="socialmedia" target="_blank" href="https://www.youtube.com/"><img class="icon" src="images/youtube.png" alt="youtube icon" ></a></li>
+        </ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d189417.4269225983!2d-112.0636598508371!3d42.115024077952484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1549772048185" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;2019 | BYU-Idaho | Renada Stafford</p>
+      <p><span id="currentdate"></span></p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+  </body>
+</html>

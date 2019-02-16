@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+body {
+    vertical-align: center;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Crimson Text', serif;
+    
+}
+
+header {
+	margin: 0 auto;
+    background-color: #4a3e62;
+    color: #fff8eeff;
+	border: 1px solid #4a3e62c5;
+    box-shadow: 0 0 30px #777;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
+.motto {
+    padding: 5px;
+}
+nav {
+    margin: 0;
+    background-color:#788aa3;
+    text-align: center;
+    padding: 0;
+    overflow: hidden; 
+}
+nav ul {
+    vertical-align: center;
+    padding: 0;
+}
+nav ul.hide {
+    display: none;
+}
+nav a {
+    display: block;
+    padding: 5px;
+}
+nav a:link { 
+    color:#fff8eeff;
+    text-decoration: none;
+}
+nav a:visited {
+    color: #4a3e62;
+}
+a:hover {
+    background-color: #e86e3bff;
+}
+nav a.current {
+    background-color: #fff8eeff;
+    color: #121225;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #4a3e62;
+
+}
+main {
+    background-color: #fff8eeff;
+    color: #4a3e62;
+}
+#preston {
+    margin: 20px;
+    font-size: 2em;
+}
+#local {
+    position: absolute;
+    background-color: rgb(120, 138, 163, 0.8);
+    color: #121225;
+    border: 1px solid #fff8eeff;
+    box-shadow: 0 0 30px #121225;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1em;
+    font-family: 'Josefin Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10px;
+    grid-gap: 10px;
+}
+#local .one {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    justify-self: center;
+}
+#local .two {
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: end;
+}
+#local .three {
+    grid-row: 2;
+    grid-column: 2;
+    justify-self: start;
+}
+#forecast {
+    display: none;
+}
+section .image {
+    width: 100vw;
+}
+article {
+    background-color: #788aa3;
+    color: #fff8eeff;
+    vertical-align: center;
+    overflow: auto;
+    padding: 20px;
+}
+article h4 {
+    font-style: italic;
+}
+article .image {
+    padding: 0;
+}
+.info {
+    clear: both;
+}
+.info ul {
+    margin: 0 0 0 20px;
+}
+footer {
+    background-color: #788aa3;
+    color: #fff8eeff;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    padding: 5px;
+}
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+.map {
+    vertical-align: center;
+    border-style: inset;
+    border-color: white; 
+}
+.socialmedia {
+    display: inline-block;
+    margin: 20px;
+}
