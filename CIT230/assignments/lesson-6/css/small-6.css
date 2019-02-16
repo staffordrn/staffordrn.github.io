@@ -149,7 +149,7 @@ h2 {
     border-style: inset;
     border-color: white; 
 }
-.socialmedia {
+#socialmedia li{
     display: inline-block;
     margin: 20px;
 }
