@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+  <head>
+    <title>Envision Weather: Southeastern Idaho's Community Weather Source</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="envision weather, community weather and events for southwest idaho">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text%7cJosefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-7.css">
+    <link rel="stylesheet" href="css/medium-7.css">
+    <link rel="stylesheet" href="css/large-7.css">
+  </head>
+
+  <body>
+    <header>
+      <div id="top">
+        <img src="images/sunset-logo.png" alt="sunset logo">
+        <section class="headings">
+          <h1>Envision Weather</h1>
+          <div class="motto">Envision your perfect day</div>
+        </section>
+      </div>
+      <nav>
+        <button onclick="togglemenu()" id="menu">&#9776;</button>
+        <ul id="primarynav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-7.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery-7.html" class="current">Gallery</a></li>
+          </ul>
+      </nav>
+    </header>
+    <main class="gallery">
+        <figure>
+          <img src="images/rain-bike-640.jpg" class="image" alt="image of biking through town in the rain" 
+            srcset="images/rain-bike-256.jpg 256w,
+                    images/rain-bike-455.jpg 455w,
+                    images/rain-bike-640.jpg 640w"
+            sizes="(min-width: 768px) 30vw,
+                    (max-width: 768px) and (min-width: 400px) 50vw">
+          <figcaption>Riding in the downtown rain</figcaption>
+        </figure>
+        <figure>
+          <img src="images/rainbow-640.jpg" class="image" alt="image of a rainbow in an open field" 
+            srcset="images/rainbow-256.jpg 256w,
+                    images/rainbow-455.jpg 455w,
+                    images/rainbow-640.jpg 640w"
+            sizes="(min-width: 768px) 30vw,
+                  (max-width: 768px) and (min-width: 400px) 50vw">
+          <figcaption>A rainbow in an open field</figcaption>
+        </figure>
+        <figure>
+          <img src="images/autumn-640.jpg" class="image" alt="image of autumn foliage"
+          srcset="images/autumn-256.jpg 256w,
+                  images/autumn-455.jpg 455w,
+                  images/autumn-640.jpg 640w"
+          sizes="(min-width: 768px) 30vw,
+                  (max-width: 768px) and (min-width: 400px) 50vw">
+          <figcaption>Autumn leaves</figcaption>
+        </figure>
+        <figure>
+          <img src="images/winter-640.jpg" class="image" alt="a snowy winter scene"
+          srcset="images/winter-256.jpg 256w,
+                  images/winter-455.jpg 455w,
+                  images/winter-640.jpg 640w"
+          sizes="(min-width: 768px) 30vw,
+                  (max-width: 768px) and (min-width: 400px) 50vw">
+          <figcaption>A wintry day</figcaption>
+        </figure>
+        <figure>
+          <img src="images/blue-sky-640.jpg" class="image"  alt="blue sky with clouds"
+          srcset="images/blue-sky-256.jpg 256w,
+                  images/blue-sky-455.jpg 455w,
+                  images/blue-sky-640.jpg 640w"
+          sizes="(min-width: 768px) 30vw,
+                  (max-width: 768px) and (min-width: 400px) 50vw">
+        <figcaption>A bright blue sky</figcaption>
+        </figure>
+        <figure>
+          <img src="images/foliage-640" class="image" alt="a lane lined with fall trees"
+          srcset="images/foliage-256.jpg 256w,
+                  images/foliage-455.jpg 455w,
+                  images/foliage-640.jpg 640w"
+          sizes="(min-width: 768px) 30vw,
+                  (max-width: 768px) and (min-width: 400px) 50vw">
+          <figcaption>A tree lined street</figcaption>
+        </figure>
+    </main>
+    <footer>
+      <p>&copy;2019 | BYU-Idaho | Renada Stafford</p>
+      <p><span id="currentdate"></span></p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+  </body>
+</html>
