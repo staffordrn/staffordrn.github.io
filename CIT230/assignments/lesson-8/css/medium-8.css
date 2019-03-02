@@ -1,8 +1,8 @@
-@media screen and (min-width: 400px){
+@media screen and (min-width: 430px){
   nav { background: #788aa3; }
   nav li, a { display: inline-block; }
   #menu { display: none; }
-  nav ul { padding: 0; font-size: 1em;}
+  nav ul { padding: 0; font-size: .75em;}
   nav ul li a,
   nav ul li a:after,
   nav ul li a:before { transition: all .25s; }
@@ -22,6 +22,10 @@
     object-fit: contain;
   }
   article .image {float: right;}
+  .info { 
+    display: flex;
+    flex-flow: row nowrap;
+  }
   .gallery figure img { width: 40vw;}
   .gallery { 
     margin: auto;
@@ -46,5 +50,9 @@
     text-align: center;
     padding: 5px;
     font-size: 1em;
+  }
+  #thanks {
+    font-size: 3em;
+    padding: .5em;
   }
 }
