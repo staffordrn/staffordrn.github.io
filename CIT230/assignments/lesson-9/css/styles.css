@@ -1,0 +1,33 @@
+/*table build*/
+table {
+  text-align: center; 
+  margin: 10% auto;
+  box-shadow: 5px 5px 10px gray;
+}
+#acme, th, td {
+  font-family: Ubuntu, Arial, sans-serif;
+  color: black;
+  border: 1px solid lightgrey;
+  border-collapse: collapse;
+  padding: 8px;
+}
+#acme tbody tr th {
+  background-color: #628ca6;
+  font-weight: bold;
+  color: white;
+}
+#acme tbody tr:nth-child(even) {background: #e7f0ed}
+#acme tbody tr:nth-child(odd) {background: #e7ffed}
+#acme tbody tr:nth-child(6) td:first-child {font-style: italic;}
+#acme tbody tr:nth-child(5) td:nth-child(3) {
+  background-color: #628ca6;
+  color: white;
+}
+#acme thead {
+  background-color: #7fb9c2;
+  font-size: 1.5em;
+}
+#acme tfoot {
+  background-color: #7fb9c2;
+  font-size: .75em;
+}
