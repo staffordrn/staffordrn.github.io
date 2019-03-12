@@ -24,6 +24,7 @@ request.onload = function() {
         let line3 = document.createElement("p");
         let line4 = document.createElement("p");
         let image = document.createElement("img");
+        let block = document.createElement("div")
         
         boxh1.textContent = towns[i].name;
         line1.textContent = "Motto: " + towns[i].motto;
@@ -32,6 +33,8 @@ request.onload = function() {
         line4.textContent = "Annual Rainfall " + towns[i].averageRainfall + "in"; 
         image.setAttribute("src", "images/" + towns[i].name + ".jpg");
         image.setAttribute("alt", "Image of " + towns[i].name + ", Idaho"); 
+        block.setAttribute("class", "box");
+        
                 
         box.appendChild(boxh1);
         box.appendChild(line1);
@@ -39,6 +42,7 @@ request.onload = function() {
         box.appendChild(line3);
         box.appendChild(line4);
         box.appendChild(image);
+        box.appendChild(block);
 
         section.appendChild(box);
       }
