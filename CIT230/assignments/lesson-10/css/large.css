@@ -29,32 +29,34 @@
   article .image {
     float: right;
   }
+  /*town info boxes*/
   .towninfo {
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 172px);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-gap: 15px;
-    max-width: 70%;
+    max-width: 80%;
   }
-  
-  .table {
+  /*forecast*/
+/*  #table {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 15px auto 20px;
     grid-gap: 10px;
-  }
+  }*/
   .info { 
     display: flex;
     flex-flow: row nowrap;
   }
-  .gallery figure img { width: 25vw;}
+  .gallery figure img { width: 24vw;}
   .gallery { 
     margin: auto;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
     grid-gap: 2em;
-    padding: 2em;
   }
   .gallery .image:hover {box-shadow: 0 0 50px #333;}
   footer {

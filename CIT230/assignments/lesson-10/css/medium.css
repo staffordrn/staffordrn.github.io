@@ -17,7 +17,15 @@
     margin: auto;
     padding: 2em;
   }
-  section .image {
+  .towninfo {
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    max-width: 90%;
+    justify-content: space-around;
+  }
+  section.image {
     width: 100%;
     object-fit: contain;
   }
@@ -33,13 +41,13 @@
     grid-template-columns: repeat( auto-fit, minmax(256px, 1fr));
     grid-gap: 1.5em;
     padding: 1.5em;
-  }
-  .table {
+  }/*5 day forecast*/
+  /*#table {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 15px auto 20px;
     grid-gap: 10px;
-  }
+  }*/
   div .day, .icon, .temp {
     justify-self: center;
   }

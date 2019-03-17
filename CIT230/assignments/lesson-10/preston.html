@@ -7,9 +7,9 @@
     <meta name="description" content="envision weather, community weather and events for southwest idaho">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text%7CJosefin+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small-9.css">
-    <link rel="stylesheet" href="css/medium-9.css">
-    <link rel="stylesheet" href="css/large-9.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
   </head>
 
   <body>
@@ -38,20 +38,20 @@
         <h2 id="pagetitle">Preston Idaho</h2>
         <!--local weather with grid and spans-->
         <section id="local">
-          <h2 class="one">Local Weather</h2>
-          <ul class="lweather">
-            <li class="two">Currently:</li>
-            <li class="two">High:</li>
-            <li class="two">Wind Chill:</li>
-            <li class="two">Humidity:</li>
-            <li class="two">Wind Speed:</li>
+          <h2 id="lweatherheader">Local Weather</h2>
+          <ul id="lweather1">
+            <li>Currently:</li>
+            <li>High:</li>
+            <li>Wind Chill:</li>
+            <li>Humidity:</li>
+            <li>Wind Speed:</li>
           </ul>
-          <ul class="lweather">
-            <li class="three">Sunny</li>
-            <li class="three"><span id="temperature">76</span>&deg;F</li>
-            <li class="three"><span id="wchill"></span>&deg;F</li>
-            <li class="three">65&#37;</li>
-            <li class="three"><span id="wspeed">5</span>mph</li>
+          <ul id="lweather2">
+            <li><span id="condition"></span></li>
+            <li><span id="temperature"></span>&deg;F</li>
+            <li><span id="wchill"></span>&deg;F</li>
+            <li><span id="humidity"></span>&#37;</li>
+            <li><span id="wspeed"></span>mph</li>
           </ul>
         </section>
         <figure class="hero">
@@ -60,24 +60,25 @@
                     images/town520.jpg 260w,
                     images/town960.jpg 480w">
         </figure>
+        <!-- Five Day Forecast-->
           <section id="forecast">
           <h2>5 Day Forecast</h2>
-          <div class="table">
-          <div class="day">Wednesday</div>
-          <div class="day">Thursday</div>
-          <div class="day">Friday</div>
-          <div class="day">Saturday</div>
-          <div class="day">Sunday</div>
-          <div class="icon"><img src="images/sunny1.png" alt="sun icon"></div>
-          <div class="icon"><img src="images/sunny1.png" alt="sun icon"></div>
-          <div class="icon"><img src="images/sunny1.png" alt="sun icon"></div>
-          <div class="icon"><img src="images/sunny1.png" alt="sun icon"></div>
-          <div class="icon"><img src="images/sunny1.png" alt="sun icon"></div>
-          <div class="temp">89&deg;F</div>
-          <div class="temp">87&deg;F</div>
-          <div class="temp">78&deg;F</div>
-          <div class="temp">75&deg;F</div>
-          <div class="temp">72&deg;F</div>
+          <div id="table">
+          <div id="day1"></div>
+          <div id="day2"></div>
+          <div id="day3"></div>
+          <div id="day4"></div>
+          <div id="day5"></div>
+          <div id="icon1"></div>
+          <div id="icon2"></div>
+          <div id="icon3"></div>
+          <div id="icon4"></div>
+          <div id="icon5"></div>
+          <div id="temp1"></div>
+          <div id="temp2"></div>
+          <div id="temp3"></div>
+          <div id="temp4"></div>
+          <div id="temp5"></div>
           </div>
         </section>
       </section>
@@ -86,6 +87,9 @@
         <h3>Picnic in the Park</h3>
         <h4>By Bob Bobson</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat ac felis donec et odio pellentesque diam. Morbi tristique senectus et netus et malesuada. Ornare massa eget egestas purus viverra accumsan. Sit amet nulla facilisi morbi tempus iaculis urna id. Pretium quam vulputate dignissim suspendisse in est ante in. Cursus euismod quis viverra nibh cras pulvinar. Egestas sed tempus urna et. Risus pretium quam vulputate dignissim suspendisse in est ante in. Ultrices eros in cursus turpis. Sapien pellentesque habitant morbi tristique senectus. Consequat id porta nibh venenatis cras. Gravida quis blandit turpis cursus. In hendrerit gravida rutrum quisque non....  <a href="#">click to continue reading</a></p>
+      </article>
+      <article id="events">
+
       </article>
       <section class="info">
         <div id="contact">
@@ -110,6 +114,9 @@
     </footer>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/localweather.js"></script>
+    <!--<script src="scripts/windchill.js"></script>-->
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/townevents.js"></script>
   </body>
 </html>
