@@ -25,8 +25,8 @@
         <button onclick="togglemenu()" id="menu">&#9776;</button>
         <ul id="primarynav" class="hide">
           <li><a href="index.html">Home</a></li>
-          <li><a href="preston.html" class="current">Preston</a></li>
-          <li><a href="soda-springs.html">Soda Springs</a></li>
+          <li><a href="preston.html">Preston</a></li>
+          <li><a href="soda-springs.html" class="current">Soda Springs</a></li>
           <li><a href="fish-haven.html">Fish Haven</a></li>
           <li><a href="stormcenter.html">Storm Center</a></li>
           <li><a href="gallery.html">Gallery</a></li>
@@ -35,7 +35,7 @@
     </header>
     <main>
       <section>
-        <h2 id="pagetitle">Preston Idaho</h2>
+        <h2 id="pagetitle">Soda Springs Idaho</h2>
         <!--local weather with grid and spans-->
         <section id="local">
           <h2 id="lweatherheader">Local Weather</h2>
@@ -55,36 +55,24 @@
           </ul>
         </section>
         <figure class="hero">
-          <img src="images/town.jpg" class="image" alt="aerial image of a town" sizes="50vw"
-            srcset="images/town320.jpg 160w,
-                    images/town520.jpg 260w,
-                    images/town960.jpg 480w">
+          <img src="images/soda.jpg" class="image" alt="aerial image of a town" sizes="50vw"
+            srcset="images/soda320.jpg 160w,
+                    images/soda520.jpg 260w,
+                    images/soda960.jpg 480w">
         </figure>
         <!-- Five Day Forecast-->
           <section id="forecast">
           <h2>5 Day Forecast</h2>
           <div id="table">
-            <div id="day1"></div>
-            <div id="day2"></div>
-            <div id="day3"></div>
-            <div id="day4"></div>
-            <div id="day5"></div>
-            <div id="temp1"></div>
-            <div id="temp2"></div>
-            <div id="temp3"></div>
-            <div id="temp4"></div>
-            <div id="temp5"></div>
+          
           </div>
         </section>
       </section>
       <article id="picnic">
-        <img src="images/picnic.jpg" class="image" alt="a couple laughing while on a picnic">
+        <img src="images/park520.jpg" class="image" alt="parent and child walking in the park">
         <h3>Picnic in the Park</h3>
         <h4>By Bob Bobson</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat ac felis donec et odio pellentesque diam. Morbi tristique senectus et netus et malesuada. Ornare massa eget egestas purus viverra accumsan. Sit amet nulla facilisi morbi tempus iaculis urna id. Pretium quam vulputate dignissim suspendisse in est ante in. Cursus euismod quis viverra nibh cras pulvinar. Egestas sed tempus urna et. Risus pretium quam vulputate dignissim suspendisse in est ante in. Ultrices eros in cursus turpis. Sapien pellentesque habitant morbi tristique senectus. Consequat id porta nibh venenatis cras. Gravida quis blandit turpis cursus. In hendrerit gravida rutrum quisque non....  <a href="#">click to continue reading</a></p>
-      </article>
-      <article id="events">
-
       </article>
       <section class="info">
         <div id="contact">
@@ -100,7 +88,12 @@
             <li><a class="socialmedia" target="_blank" href="https://www.youtube.com/"><img class="icon" src="images/youtube.png" alt="youtube icon" ></a></li>
           </ul>
         </div>
+        <article id="events">
+          <h2>Local Events</h2>
+
+        </article>
         <img src="images/map.jpg" class="map" alt="map of southeastern Idaho">
+        
       </section>
     </main>
     <footer>
@@ -109,9 +102,8 @@
     </footer>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <!--<script src="scripts/localweather.js"></script>-->
-    <!--<script src="scripts/windchill.js"></script>-->
-    <!--<script src="scripts/forecast.js"></script>-->
+    <script src="scripts/localweather.js"></script>
+    <script src="scripts/forecast.js"></script>
     <script src="scripts/townevents.js"></script>
   </body>
 </html>

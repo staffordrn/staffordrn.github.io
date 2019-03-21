@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+  <head>
+      <title>Envision Weather: Southeastern Idaho's Community Weather Source</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="envision weather, community weather and events for southwest idaho">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text%7CJosefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+
+  <body>
+    <header>
+      <div id="top">
+        <img src="images/sunset-logo.png" alt="sunset logo">
+        <section class="headings">
+          <h1>Envision Weather</h1>
+          <div class="motto">Envision your perfect day</div>
+        </section>
+      </div>
+      <nav>
+        <button onclick="togglemenu()" id="menu">&#9776;</button>
+        <ul id="primarynav" class="hide">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="preston.html">Preston</a></li>
+          <li><a href="soda-springs">Soda Springs</a></li>
+          <li><a href="fish-haven">Fish Haven</a></li>
+          <li><a href="#" class="current">Storm Center</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <h2 id="pagetitle">Storm Center</h2>
+      <!--start of form-->
+      <form method="get" action="thanks.html">
+        <fieldset id="personal">
+          <legend>Personal Information</legend>
+            <label>Full Name* <input type="text" name="fullname" required  pattern="[A-Za-z\s]{5,}" minlength="5"></label>
+            <label>Email* <input type="email" name="email" placeholder="Email Address"></label>
+            <label>Phone Number* <input type="tel" name="phone" required placeholder="xxx xxx xxxx"></label>
+            <label>Zip Code* <input type="number" name="zip" required placeholder="12345"></label>
+        </fieldset>
+        <fieldset id="storm">
+          <legend>Storm Information</legend>
+            <label>Storm Date <input type="date"></label>
+            <label>Storm Type <input list="storms" name="stormtype">
+              <datalist id="storms">
+                <option value="Flash Flood"></option>
+                <option value="Hail"></option>
+                <option value="Hurricane"></option>
+                <option value="Thunderstorm"></option>
+                <option value="Tornado"></option>
+              </datalist>
+            </label>
+            <label>Storm Severity (1-10)
+              <input type="range" value="5" min="1" max="10" step="1" oninput="severityRating(this.value)" onchange="severityRating(this.value)">
+              <span id="severity">5</span>
+            </label>
+            <label>Storm Region 
+              <select name="region">
+                <option value="">Select Region...</option>
+                <option value="Franklin">Franklin</option>
+                <option value="Greenville">Greenville</option>
+                <option value="Springfield">Springfield</option>
+              </select>
+            </label> 
+              <div id="dangeometer">Are you in danger?
+                <label for="y">
+                  <input type="radio" id="y" name="danger" value="Yes">Yes</label>
+                <label for="n">
+                  <input type="radio" id="n" name="danger" value="No">No</label>
+                <label for="m">
+                  <input type="radio" id="m" name="danger" value="Maybe">Maybe</label>
+              </div>
+            <label>Comments <textarea rows="6" cols="30"></textarea></label>
+            <input type="submit" value="Share">
+          </fieldset>
+        </form>
+        <!--end of form-->
+      <section class="info">
+        <div id="contact">
+          <h4>Envision Weather</h4>
+          <ul>
+            <li><img src="images/location.png" alt="map icon">Address: 30N 1st E Preston, Id 83263</li>
+            <li><img src="images/phone.png" alt="phone icon">Phone: 999-999-9999</li>
+            <li><img src="images/mail.png" alt="mail icon">E-mail: weather@envisionweather.com</li>
+          </ul>
+          <ul id="socialmedia">
+            <li><a class="socialmedia" target="_blank" href="https://www.facebook.com/"><img class="icon" src="images/facebook.png" alt="facebook icon" ></a></li>
+            <li><a class="socialmedia" target="_blank" href="https://www.instagram.com/"><img class="icon" src="images/instagram.png" alt="instagram icon" ></a></li>
+            <li><a class="socialmedia" target="_blank" href="https://www.youtube.com/"><img class="icon" src="images/youtube.png" alt="youtube icon" ></a></li>
+          </ul>
+        </div>
+        <img src="images/map.jpg" class="map" alt="map of southeastern Idaho">
+      </section>
+    </main>
+    <footer>
+      <p>&copy;2019 | BYU-Idaho | Renada Stafford</p>
+      <p><span id="currentdate"></span></p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/severity.js"></script>
+  </body>
+</html>

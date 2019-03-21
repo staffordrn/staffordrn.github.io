@@ -1,0 +1,86 @@
+@media screen and (min-width: 430px){
+  body {margin: 0 auto 2em }
+  nav { background: #788aa3; }
+  nav li, a { display: inline-block; }
+  #menu { display: none; }
+  nav ul { padding: 0; font-size: .75em;}
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before { transition: all .25s; }
+  nav ul.hide { display: block; }
+  nav a.current {
+    background-color: #fff8eeff;
+    color: #121225;
+  }
+  main, footer {
+    margin: auto;
+  }
+
+  /*-----five day forecast-----*/
+  #forecast {
+    display: inline;
+    margin: 0 auto;
+    padding: 2em;
+  }
+  #forecast h2 {
+    text-align: center;
+  }
+  #table {
+    display: grid;
+    grid-template-columns: repeat(5, .5fr);
+    grid-template-rows: repeat(3, .5fr);
+  }
+    .day {
+      grid-row: 1/2;   
+  }
+    .temp {
+      grid-row: 2/3;
+    }
+    .icon {
+      grid-row: 3/4;
+    }
+  .towninfo {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    max-width: 90%;
+    justify-content: space-around;
+  }
+  /*section.image {
+    width: 100%;
+    object-fit: contain;
+  }*/
+  article .image {float: right;}
+  /*-----gallery-----*/
+  .gallery figure img { width: 24vw;}
+  .gallery { 
+    margin: auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1em;
+  }
+  .gallery .image:hover {box-shadow: 0 0 50px #333;}
+  /*.gallery { 
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(256px, 1fr));
+    grid-gap: 1.5em;
+    padding: 1.5em;
+  }*/
+  div .day, .icon, .temp {
+    justify-self: center;
+  }
+  footer {
+    background-color: #788aa3;
+    color: #fff8eeff;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 1em;
+  }
+  #thanks {
+    font-size: 3em;
+    padding: .5em;
+  }
+}

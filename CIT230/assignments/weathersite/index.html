@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+  <head>
+      <title>Envision Weather: Southeastern Idaho's Community Weather Source</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="envision weather, community weather and events for southwest idaho">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text%7CJosefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+
+  <body>
+    <header>
+      <div id="top">
+        <img src="images/sunset-logo.png" alt="sunset logo">
+        <section class="headings">
+          <h1>Envision Weather</h1>
+          <div class="motto">Envision your perfect day</div>
+        </section>
+      </div>
+      <nav>
+        <button onclick="togglemenu()" id="menu">&#9776;</button>
+        <ul id="primarynav" class="hide">
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="preston.html" >Preston</a></li>
+            <li><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 id="pagetitle">Southeastern Idaho's Weather and Community Site</h2>
+      <section class="towninfo">
+        
+      </section>
+
+      <section class="info">
+        <div id="contact">
+          <h4>Envision Weather</h4>
+          <ul>
+            <li><img src="images/location.png" alt="map icon">Address: 30N 1st E Preston, Id 83263</li>
+            <li><img src="images/phone.png" alt="phone icon">Phone: 999-999-9999</li>
+            <li><img src="images/mail.png" alt="mail icon">E-mail: weather@envisionweather.com</li>
+          </ul>
+          <ul id="socialmedia">
+            <li><a class="socialmedia" target="_blank" href="https://www.facebook.com/"><img class="icon" src="images/facebook.png" alt="facebook icon" ></a></li>
+            <li><a class="socialmedia" target="_blank" href="https://www.instagram.com/"><img class="icon" src="images/instagram.png" alt="instagram icon" ></a></li>
+            <li><a class="socialmedia" target="_blank" href="https://www.youtube.com/"><img class="icon" src="images/youtube.png" alt="youtube icon" ></a></li>
+          </ul>
+        </div>
+        <img src="images/map.jpg" class="map" alt="map of southeastern Idaho">
+      </section>
+    </main>
+    <footer>
+      <p>&copy;2019 | BYU-Idaho | Renada Stafford</p>
+      <p><span id="currentdate"></span></p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/towninfo.js"></script>
+  </body>
+</html>

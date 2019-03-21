@@ -8,13 +8,14 @@ request.send();
 request.onload = function() {
   var townInfo = request.response;
   fillTownInfo(townInfo);
+  //console.log(townInfo)
 }
 //function for creating and displaying town info
   function fillTownInfo(jsonObj) {
     let towns = jsonObj["towns"];
     let townArray = ["Preston", "Fish Haven", "Soda Springs"];
     
-    //console.log(jsonObj);
+    console.log(jsonObj);
 
     for (i=0; i < towns.length; i++) 
       for (t=0; t < townArray.length; t++)

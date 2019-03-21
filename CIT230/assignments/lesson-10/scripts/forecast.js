@@ -8,19 +8,24 @@ getForecast.onload = function() {
   fiveDayForecast(forecastData);
   }
 function fiveDayForecast(data) {
-let hiTemp = [];
-let icons = [];
-let list = data["list"];
+  let hiTemp = [];
+  let icons = [];
+  let list = data["list"];
+  let a = 1
+    for (i = 0; i <= list.length; i++) {
+      //fill hiTemp & icons
+      if (list[i].dt_txt.includes("18:00:00")) {
+        hiTemp[i] = list[i].main.temp_max;
+        icons[i] = list[i].weather[0].icon;
 
-  for (i = 0; i <= list.length; i++) {
-    //fill hiTemp & icons
-    if (list[i].dt_txt.includes("18:00:00")) {
-      hiTemp[i] = list[i].main.temp_max;
-      icons[i] = list[i].weather[0].icon;
+        document.getElementById("temp" + a).innerHTML = hiTemp[i];
+        let icon = document.createElement("img");
+        icon.setAttribute("src", "http://openweathermap.org/img/w/" + icons[i] + ".png");
+        document.getElementById("icon" + a).innerHTML = icon;
+        a++;
+      
+      }   
     }
-    for (a = 1; a <= 5; a++) {
-    document.getElementById("temp" + a).innerHTML = hiTemp[i];
-    document.getElementById("icon" + a).innerHTML = icons[i];
-    }   
-  }
-}
+}  
+    //http://openweathermap.org/img/w/10d.png
+     //http://openweathermap.org/img/w/
