@@ -12,7 +12,7 @@ var townId;
     townId = "5585000";
     break;
     }
-let weatherURL = "https:api.openweathermap.org/data/2.5/weather?id=" +townId+ "&APPID=f8d7ebbbba4f053dd7c51d765d385ecc&units=imperial";
+let weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=" +townId+ "&APPID=f8d7ebbbba4f053dd7c51d765d385ecc&units=imperial";
 getWeather.open("GET", weatherURL, true);
 getWeather.send();
 getWeather.onload = function() {

@@ -48,13 +48,6 @@
     width: 50%;
     float: right;
   }
-  .towninfo {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 15px;
-    max-width: 90%;
-    justify-content: space-around;
-  }
 /*  #table {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

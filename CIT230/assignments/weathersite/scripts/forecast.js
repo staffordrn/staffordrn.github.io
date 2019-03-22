@@ -12,7 +12,7 @@ var tId;
     tId = "5585000";
     break;
     }
-let forecastURL = "https:api.openweathermap.org/data/2.5/forecast?id=" +tId+ "&APPID=f8d7ebbbba4f053dd7c51d765d385ecc&units=imperial";
+let forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=" +tId+ "&APPID=f8d7ebbbba4f053dd7c51d765d385ecc&units=imperial";
 getForecast.open("GET", forecastURL, true);
 getForecast.send();
 getForecast.onload = function() {
