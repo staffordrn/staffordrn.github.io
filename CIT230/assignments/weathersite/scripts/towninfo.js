@@ -1,6 +1,5 @@
 let section = document.querySelector('section.towninfo');
 let requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
-//send request to retrieve JSON and store in a variable called townInfo
 let request = new XMLHttpRequest();
 request.open("GET", requestURL);
 request.responseType = "json";
@@ -8,14 +7,10 @@ request.send();
 request.onload = function() {
   var townInfo = request.response;
   fillTownInfo(townInfo);
-  //console.log(townInfo)
 }
-//function for creating and displaying town info
   function fillTownInfo(jsonObj) {
     let towns = jsonObj["towns"];
     let townArray = ["Preston", "Fish Haven", "Soda Springs"];
-    
-    console.log(jsonObj);
 
     for (i=0; i < towns.length; i++) 
       for (t=0; t < townArray.length; t++)

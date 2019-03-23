@@ -98,7 +98,7 @@ main { color: #4a3e62; }
   box-shadow: 5px 5px 5px #788aa3;
   background-color: rgb(221, 243, 250);
   border: 1px solid gray;
-  padding: 0px;
+  margin: 1em;
   font-size: .9em;
 }
 .towninfo p {
@@ -109,10 +109,6 @@ main { color: #4a3e62; }
 .towninfo article img {
   max-width: 100%;
 }
-/*.box {
-  background-color: #fff8eeff;
-  border: 2px solid #788aa3;
-}*/
 /*-----local weather box-----*/
 #local {
   position: absolute;
@@ -149,17 +145,23 @@ main { color: #4a3e62; }
 #forecast { display: none; }
 /*-----town article and image-----*/
 section .image { width: 100vw; }
-#picnic {
+.townarticle {
   background-color: #788aa3;
   color: #fff8eeff;
   overflow: auto;
   padding: 20px;
 }
-#picnic h4 {
+.townarticle h4 {
   font-style: italic;
 }
-#picnic .image {
+.townarticle .image {
   width: 100%;
+}
+.gallery figure img { width: 100vw;  margin: 1em 0}
+.gallery { 
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
 }
 /*-----town events-----*/
 #events {

@@ -22,7 +22,6 @@ getForecast.onload = function() {
   }
 let fiveDays = getFiveDays();
 function fiveDayForecast(data) {
-  console.log(data);
   let hiTemp = [];
   let icons = [];
   let list = data["list"];
