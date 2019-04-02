@@ -1,0 +1,32 @@
+{
+  "temple": [
+  {
+    "name": "Columbia Southe Carolina Temple",
+    "address": "2905 Trotter Rd, Hopkins, SC 29601",
+    "phone": "(803) 647-9472",
+    "dedicated": "16–17 October 1999",
+    "website": "https://churchofjesuschristtemples.org/columbia-south-carolina-temple/"
+  },
+  {
+    "name": "Philadelphia Pennsylvania Temple",
+    "address": "1739 Vine St. Philadelphia, PA 19103",
+    "phone": "215-398-3040",
+    "dedicated": "18 September 2016",
+    "website": "https://churchofjesuschristtemples.org/philadelphia-pennsylvania-temple/"
+  },
+  {
+    "name": "Raleigh North Carolina Temple",
+    "address": "574 Bryan Dr. Apex, NC 27502-4127",
+    "phone": "(919) 362-4135",
+    "dedicated": "18–19 December 1999",
+    "website": "https://churchofjesuschristtemples.org/raleigh-north-carolina-temple/"
+  },
+  {
+    "name": "Washington DC Temple",
+    "address": "9900 Stoneybrook Dr, Kensington, MD 20895",
+    "phone": "(301) 588-0650",
+    "dedicated": "19–22 November 1974",
+    "website": "https://churchofjesuschristtemples.org/washington-d.c.-temple/" 
+  }
+]
+}
