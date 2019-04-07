@@ -16,9 +16,9 @@
       "Thursday, 28 November", 
       "Tuesday, 24 December - Thursday, 26 December", "Tuesday, 31 December - Monday, 13 January"],
     "schedule":{
-      "sessions": {"days": ["Tuesdays and Fridays", "Wedesdays", "Thursdays", "Saturdays"], "hours": ["5:00 PM, 7:00 PM", "11:00 AM, 5:00 PM, 7:00 PM", "9:00 AM, 11:00 AM, 5:00 PM, 7:00 PM", "8:00 AM, 10:00 AM, 12:30 PM, 2:30 PM"]},
-      "bapt": {"days": ["Tuesdays and Fridays","Wedesdays and Thursdays", "Saturdays"], "hours": ["5:00 PM - 8:00 PM", "9:00 AM - 10:15 AM, 11:00 AM - 12:15 PM, 5:00 PM - 8:00 PM", "5:00 PM - 8:00 PM"]},
-      "init": {"days": ["Tuesdays and Fridays", "Wedesdays and Thursdays", "Saturday" ], "hours": ["4:30 PM - 8:30 PM", "8:30 AM - 12:30 PM, 4:30 PM - 8:30 PM", "7:30 AM - 4:00PM"]},
+      "sessions": {"days": ["Tuesdays and Fridays", "Wednesdays", "Thursdays", "Saturdays"], "hours": ["5:00 PM, 7:00 PM", "11:00 AM, 5:00 PM, 7:00 PM", "9:00 AM, 11:00 AM, 5:00 PM, 7:00 PM", "8:00 AM, 10:00 AM, 12:30 PM, 2:30 PM"]},
+      "bapt": {"days": ["Tuesdays and Fridays","Wednesdays and Thursdays", "Saturdays"], "hours": ["5:00 PM - 8:00 PM", "9:00 AM - 10:15 AM, 11:00 AM - 12:15 PM, 5:00 PM - 8:00 PM", "5:00 PM - 8:00 PM"]},
+      "init": {"days": ["Tuesdays and Fridays", "Wednesdays and Thursdays", "Saturday" ], "hours": ["4:30 PM - 8:30 PM", "8:30 AM - 12:30 PM, 4:30 PM - 8:30 PM", "7:30 AM - 4:00PM"]},
       "seal": {"days": ["Tuesdays", "Wednesdays and Thursdays", "Fridays", "Saturdays"], "hours": ["5:10 PM - 6:10 PM, 7:10 PM - 8:10 PM", "9:10 AM - 10:10 AM, 11:10 AM - 12:10 PM, 5:10 PM - 6:10 PM, 7:10 PM - 8:10 PM","5:05 PM - 6:10 PM, 7:05 PM - 8:10 PM", "8:10 AM - 9:10 AM, 10:10 AM - 11:10 AM, 12:40 PM - 1:40 PM, 2:40 PM - 3:40 PM"]}}
   },
   {
@@ -51,7 +51,7 @@
     "break": "Groundbreaking: 6 February 1999 by Loren C. Dunn",
     "ded": "Dedication: 18–19 December 1999 by Gordon B. Hinckley"},
     "closed": "",
-    "schedule": "Closed for renovations"
+    "schedule": {"days": ["Closed for renovations"], "hours": [""]}
   },
   {
     "name": "Washington DC Temple",
@@ -60,7 +60,7 @@
     "services": ["Clothing rental", "Cafeteria","Distribution center", "Visitor's center"],
     "history": {"ann": "Announced: 15 November 1968", "break": "Groundbreaking: 7 December 1968 by Hugh B. Brown", "ded": "Dedication:  19–22 November 1974 by Spencer W. Kimball"},
     "closed": "",
-    "schedule": "Closed for renovations"
+    "schedule":  {"days": ["Closed for renovations"], "hours": [""]}
   }
 ]
 }
