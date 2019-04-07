@@ -51,7 +51,11 @@
     "break": "Groundbreaking: 6 February 1999 by Loren C. Dunn",
     "ded": "Dedication: 18–19 December 1999 by Gordon B. Hinckley"},
     "closed": "",
-    "schedule": {"days": ["Closed for renovations"], "hours": [""]}
+    "schedule": {
+      "sessions": {"days": ["Closed for renovations"], "hours": [""]},
+      "bapt":{"days": ["Closed for renovations"], "hours": [""]},
+      "init": {"days": ["Closed for renovations"], "hours": [""]},
+      "seal": {"days": ["Closed for renovations"], "hours": [""]}}
   },
   {
     "name": "Washington DC Temple",
@@ -60,7 +64,11 @@
     "services": ["Clothing rental", "Cafeteria","Distribution center", "Visitor's center"],
     "history": {"ann": "Announced: 15 November 1968", "break": "Groundbreaking: 7 December 1968 by Hugh B. Brown", "ded": "Dedication:  19–22 November 1974 by Spencer W. Kimball"},
     "closed": "",
-    "schedule":  {"days": ["Closed for renovations"], "hours": [""]}
+    "schedule": {
+      "sessions": {"days": ["Closed for renovations"], "hours": [""]},
+      "bapt":{"days": ["Closed for renovations"], "hours": [""]},
+      "init": {"days": ["Closed for renovations"], "hours": [""]},
+      "seal": {"days": ["Closed for renovations"], "hours": [""]}}
   }
 ]
 }
