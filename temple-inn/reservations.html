@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+  <head>
+    <title>Temple Inn and Suites, Temple Accommodations for members of the Church of Jesus Christ of Latter-day</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Welcome to the Temple Inn and Suites, providing LDS temple patrons and workers with lodging and more.">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes%7CLibre+Baskerville" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+      <header class="top">
+          <img src="images/logo-gray-100.png" class="logo" alt="angel moroni logo">
+          <h1 id="title">The Temple Inn and Suites</h1>
+      </header>
+      <nav>
+        <button onclick="toggleMenu()" id="menu">&#9776;</button>
+        <ul id="nav" class="hide">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="temples.html">Temples</a></li>
+          <li><a href="reservations.html" class="current">Reservations</a></li>
+          <li id="svcs"><a href="services.html">Our Services</a><button onclick="toggleSubMenu()" id="submenu">&#x25BC;</button>
+            <ul id="subnav" class="hide">
+              <li class="sub"><a href="reception.html">Reception</a></li>
+              <li class="sub"><a href="temple-missionary.html">Full Time Temple Missionaries</a></li>
+            </ul> 
+          </li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+    <main>
+      <form method="get" action="success.html">
+        <fieldset class="reginfo">
+          <legend>Book a room or suite</legend>
+            <label class="formlabel">Full Name* <input type="text" name="fullname" class="req" required pattern="[A-Za-z\s]{5,}" minlength="5"></label>
+            <label class="formlabel">Email* <input type="email" name="email" class="req" required placeholder="Email Address"></label>
+            <label class="formlabel">Phone <input type="tel" name="phone" placeholder="xxx-xxx-xxxx"></label>
+            <label class="formlabel">Location <input list="locations" name="innlocations">
+              <datalist id="locations">
+                <option value="Columbia, SC"></option>
+                <option value="Philadelphia, PA"></option>
+                <option value="Raleigh, NC"></option>
+                <option value="Washington DC"></option>
+              </datalist>
+            </label>
+            <label class="formlabel">Check-in <input type="date"></label>
+            <label class="formlabel">Check-out <input type="date"></label>
+            <label class="formlabel">Number of rooms <input list="number" name="rooms">
+              <datalist id="number">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+              </datalist>
+            </label>
+            <label class="formlabel">Type of room <input list="type" name="room">
+              <datalist id="type">
+                <option value="Two Queen beds"></option>
+                <option value="One King bed"></option>
+                <option value="Suite"></option>
+              </datalist>
+            </label>
+            <label class="formlabel">Home State or Country <input list="home" name="homelocations">
+              <datalist id="home">
+                <option value="Alabama"></option>
+                <option value="Alaska"></option>
+                <option value="Arizona"></option>
+                <option value="Arkansas"></option>
+                <option value="California"></option>
+                <option value="Colorado"></option>
+                <option value="Connecticut"></option>
+                <option value="Delaware"></option>
+                <option value="Florida"></option>
+                <option value="Georgia"></option>
+                <option value="Hawaii"></option>
+                <option value="Idaho"></option>
+                <option value="Illinois"></option>
+                <option value="Indiana"></option>
+                <option value="Iowa"></option>
+                <option value="Kansas"></option>
+                <option value="Kentucky"></option>
+                <option value="Louisiana"></option>
+                <option value="Maine"></option>
+                <option value="Maryland"></option>
+                <option value="Massachusetts"></option>
+                <option value="Michigan"></option>
+                <option value="Minnesota"></option>
+                <option value="Mississippi"></option>
+                <option value="Missouri"></option>
+                <option value="Montana"></option>
+                <option value="Nebraska"></option>
+                <option value="Nevada"></option>
+                <option value="New Hampshire"></option>
+                <option value="New Jersey"></option>
+                <option value="New Mexico"></option> <option value="New York"></option>
+                <option value="North Carolina"></option>
+                <option value="North Dakota"></option>
+                <option value="Ohio"></option>
+                <option value="Oklahoma"></option>
+                <option value="Oregon"></option>
+                <option value="Pennsylvania"></option>
+                <option value="Rhode Island"></option>
+                <option value="South Carolina"></option>
+                <option value="South Dakota"></option>
+                <option value="Tennessee"></option>
+                <option value="Texas"></option>
+                <option value="Utah"></option>
+                <option value="Vermont"></option>
+                <option value="Virginia"></option>
+                <option value="Washington"></option>
+                <option value="West Virginia"></option>
+                <option value="Wisconsin"></option>
+                <option value="Wyoming"></option>
+                <option value="China"></option>
+                <option value="Japan"></option>
+                <option value="Russia"></option>
+                <option value="Germany"></option>
+                <option value="India"></option>
+                <option value="Iran"></option>
+                <option value="Israel"></option>
+              </datalist>
+            </label>
+            <label class="formlabel">Special Accomodations or Comments <textarea rows="6" cols="30"></textarea></label>
+            <input type="submit" value="Reserve Now" id="button">
+        </fieldset>
+      </form>
+      <form method="get" action="success.html">
+        <fieldset class="reginfo">
+          <legend>Wedding Receptions</legend>
+          <label class="formlabel">Full Name* <input type="text" name="fullname" class="req" required pattern="[A-Za-z\s]{5,}" minlength="5"></label>
+            <label class="formlabel">Email* <input type="email" name="email" class="req" placeholder="Email Address"></label>
+            <label class="formlabel">Phone <input type="tel" name="phone" placeholder="xxx-xxx-xxxx"></label>
+            <label class="formlabel">Location <input list="locations" name="innlocations">
+              <datalist id="location">
+                <option value="Columbia, SC"></option>
+                <option value="Philadelphia, PA"></option>
+                <option value="Raleigh, NC"></option>
+                <option value="Washington DC"></option>
+              </datalist>
+            </label>
+            <label class="formlabel">Date <input type="date"></label>
+            <label class="formlabel">Special Accomodations or Comments <textarea rows="6" cols="30"></textarea></label>
+            <input type="submit" value="Reserve Now" id="button2">
+        </fieldset>
+      </form>
+    </main>
+    <footer class="contact">
+      <ul>
+        <li>4800 Montgomery Lane</li>
+        <li>Bethesda, MD 20814</li>
+        <li>800-555-8675</li>
+        <li>info@templeinn.com</li>
+      </ul>
+      <ul id="socialmedia">
+          <li><a class="social" target="_blank" href="https://www.facebook.com/"><img class="icon" src="images/facebook.png" alt="facebook icon" ></a></li>
+          <li><a class="socialmedia" target="_blank" href="https://www.instagram.com/"><img class="icon" src="images/instagram.png" alt="instagram icon" ></a></li>
+          <li><a class="socialmedia" target="_blank" href="https://www.youtube.com/"><img class="icon" src="images/youtube.png" alt="youtube icon" ></a></li>
+          <li><a class="social" target="_blank" href="https://www.twitter.com/"><img class="icon" src="images/twitter.png" alt="youtube icon" ></a></li>
+        </ul>
+    </footer>
+    <script src="scripts/hamburger.js"></script> 
+  </body>
+</html>
