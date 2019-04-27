@@ -29,23 +29,23 @@ nav a, nav a:visited, header h1 a {
 header h1 a {
  font-family: "Lora", serif;
 }
-nav a:active {
-  color: #deb887;
-}
 nav a:hover {
   color: #fff;
   text-decoration: underline;
 }
-main a, main a:visited {
+nav a:active {
+  color: #deb887;
+}
+section h2 a, main p a:visited {
   color: #000;
   text-decoration: none;
 }
-main a:active {
-  color: #deb887;
-}
-main a:hover {
+section h2 a:hover {
   color: #6495ed;
   text-decoration: underline
+}
+section h2 a:active {
+  color: #deb887;
 }
 .post-content p a, .post-content p a:visited {
   color: #6495ed;
@@ -91,8 +91,11 @@ figure img {
     display: flex;
     flex-flow: row nowrap;
   }
-  nav {
-    width: 150px;
+  header {
+    width: 60%;
+  }
+  header h1 {
+    font-size: 2em;
   }
   article {
     max-width: 70%
