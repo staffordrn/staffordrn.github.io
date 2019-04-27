@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body {
+  margin: 0;
+}
+header {
+  background-color: #6495ed;
+  text-align: right;
+  padding: 1.25em;
+}
+header h1 {
+  padding: .5em 0;
+}
+nav {
+  padding: 1em 0 0 0;
+}
+nav ul li{
+  padding: .25em 0;
+}
+nav a, nav a:visited, header h1 a {
+  text-decoration: none;
+  color: #faebd7;
+  font-family: "Helvetica", 'Arial', sans-serif;
+}
+header h1 a {
+ font-family: "Lora", serif;
+}
+nav a:active {
+  color: #deb887;
+}
+nav a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+main a, main a:visited {
+  color: #000;
+  text-decoration: none;
+}
+main a:active {
+  color: #deb887;
+}
+main a:hover {
+  color: #6495ed;
+  text-decoration: underline
+}
+.post-content p a, .post-content p a:visited {
+  color: #6495ed;
+}
+.post-content p a:active {
+  color: #deb887;
+}
+.post-content p a:hover {
+  text-decoration: underline;
+}
+hr {
+  max-width: 100%;
+  margin: 0 auto;
+}
+main {
+  font-family: "Helvetica", 'Arial', sans-serif;
+  background-color: #faebd7;
+  display: flex;
+  flex-flow: column;
+}
+article {
+  max-width: 80%;
+  margin: 1em auto;
+  padding: 1em;
+  background-color: #fff;
+  box-shadow: 3px 3px 3px #DBD8D0;
+}
+h1, h2 {
+  font-family: "Lora";
+  text-decoration: none;
+}
+.post-date {
+  color: gray;
+}
+figure img {
+  display: block;
+  max-width: 60%;
+  margin: 3em auto 1em;
+}
+@media screen and (min-width:768px) {
+  body {max-width: 960px; margin: 0 auto;}
+  body div {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  nav {
+    width: 150px;
+  }
+  article {
+    max-width: 70%
+  }
+  figure img {
+    display: block;
+    max-width: 60%;
+    margin: 3em auto 1em;
+  }
+  .post-content {
+    max-width: 100%;
+  }
+}
